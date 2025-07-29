@@ -1,13 +1,8 @@
 from django.db import models
 
 
-# categories = Category.objects.all()
-# for category in categories:
-#     print(category.name)
-#     print(category.subcategories)  # related_name
-
 class Category(models.Model):
-    name = models.CharField(max_length=150)
+    name = models.CharField(max_length=150, unique=True)
     parent = models.ForeignKey('self',
                                on_delete=models.CASCADE,
                                related_name='subcategories',
