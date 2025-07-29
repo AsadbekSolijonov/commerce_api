@@ -12,3 +12,11 @@ class Category(models.Model):
         if self.parent:
             return f"{self.name}: {self.parent}"
         return f"{self.name}"
+
+
+class Product(models.Model):
+    name
+    price
+    unit ( kg, dona, box, liter, )
+    discount
+    category -
