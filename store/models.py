@@ -14,9 +14,9 @@ class Category(models.Model):
         return f"{self.name}"
 
 
-class Product(models.Model):
-    name
-    price
-    unit ( kg, dona, box, liter, )
-    discount
-    category -
+# class Product(models.Model):
+#     name
+#     price
+#     unit ( kg, dona, box, liter, )
+#     discount
+#     category -
